@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101EF52920D9AC4B00B31AB0 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 101EF52820D9AC4B00B31AB0 /* libGoogleAnalytics.a */; };
+		101EF52B20D9AD2000B31AB0 /* Pods_HonoluluArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101EF52A20D9AD2000B31AB0 /* Pods_HonoluluArt.framework */; };
 		106ED2A220D83ED60084031F /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106ED2A120D83ED60084031F /* Artwork.swift */; };
 		106ED2A420D849620084031F /* ArtWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106ED2A320D849620084031F /* ArtWorkViewModel.swift */; };
 		106ED2A620D84F580084031F /* ArtworkMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106ED2A520D84F580084031F /* ArtworkMarkerView.swift */; };
@@ -19,9 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101EF52420D9AB0300B31AB0 /* Pods_HonoluluArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HonoluluArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		101EF52720D9ABDA00B31AB0 /* HonoluluArt-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HonoluluArt-Bridging-Header.h"; path = "HonoluluArt/Bridging-header/HonoluluArt-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		101EF52820D9AC4B00B31AB0 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Pods/GoogleAnalytics/Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		101EF52A20D9AD2000B31AB0 /* Pods_HonoluluArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HonoluluArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		106ED2A120D83ED60084031F /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		106ED2A320D849620084031F /* ArtWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkViewModel.swift; sourceTree = "<group>"; };
 		106ED2A520D84F580084031F /* ArtworkMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkMarkerView.swift; sourceTree = "<group>"; };
+		32A500667779C463C1AECBE0 /* Pods-HonoluluArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HonoluluArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-HonoluluArt/Pods-HonoluluArt.release.xcconfig"; sourceTree = "<group>"; };
 		40086AF01EC7F7AF00FD79F6 /* HonoluluArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonoluluArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40086AF31EC7F7AF00FD79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40086AF51EC7F7AF00FD79F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		40086AFD1EC7F7AF00FD79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40086AFF1EC7F7AF00FD79F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40086B051EC7F7CD00FD79F6 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		E1A15B0924219619F0AFC4E4 /* Pods-HonoluluArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HonoluluArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HonoluluArt/Pods-HonoluluArt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101EF52B20D9AD2000B31AB0 /* Pods_HonoluluArt.framework in Frameworks */,
+				101EF52920D9AC4B00B31AB0 /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101EF52620D9ABC400B31AB0 /* Bridging-Header */ = {
+			isa = PBXGroup;
+			children = (
+				101EF52720D9ABDA00B31AB0 /* HonoluluArt-Bridging-Header.h */,
+			);
+			name = "Bridging-Header";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1E29053C2B885D3D7811D456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				101EF52A20D9AD2000B31AB0 /* Pods_HonoluluArt.framework */,
+				101EF52820D9AC4B00B31AB0 /* libGoogleAnalytics.a */,
+				101EF52420D9AB0300B31AB0 /* Pods_HonoluluArt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2403E608D4E7C97337A50F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A15B0924219619F0AFC4E4 /* Pods-HonoluluArt.debug.xcconfig */,
+				32A500667779C463C1AECBE0 /* Pods-HonoluluArt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		40086AE71EC7F7AF00FD79F6 = {
 			isa = PBXGroup;
 			children = (
 				40086AF21EC7F7AF00FD79F6 /* HonoluluArt */,
 				40086AF11EC7F7AF00FD79F6 /* Products */,
+				2403E608D4E7C97337A50F6B /* Pods */,
+				1E29053C2B885D3D7811D456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +102,7 @@
 		40086AF21EC7F7AF00FD79F6 /* HonoluluArt */ = {
 			isa = PBXGroup;
 			children = (
+				101EF52620D9ABC400B31AB0 /* Bridging-Header */,
 				40086AF31EC7F7AF00FD79F6 /* AppDelegate.swift */,
 				106ED2A120D83ED60084031F /* Artwork.swift */,
 				106ED2A320D849620084031F /* ArtWorkViewModel.swift */,
@@ -83,6 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40086B021EC7F7AF00FD79F6 /* Build configuration list for PBXNativeTarget "HonoluluArt" */;
 			buildPhases = (
+				E35B07BD38C5FCA7B5C4B427 /* [CP] Check Pods Manifest.lock */,
 				40086AEC1EC7F7AF00FD79F6 /* Sources */,
 				40086AED1EC7F7AF00FD79F6 /* Frameworks */,
 				40086AEE1EC7F7AF00FD79F6 /* Resources */,
@@ -108,6 +150,7 @@
 				TargetAttributes = {
 					40086AEF1EC7F7AF00FD79F6 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = DU5Z24RG7N;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -144,6 +187,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E35B07BD38C5FCA7B5C4B427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HonoluluArt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40086AEC1EC7F7AF00FD79F6 /* Sources */ = {
@@ -287,12 +351,19 @@
 		};
 		40086B031EC7F7AF00FD79F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A15B0924219619F0AFC4E4 /* Pods-HonoluluArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU5Z24RG7N;
 				INFOPLIST_FILE = HonoluluArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleAnalytics/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.HonoluluArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./HonoluluArt/Bridging-header/HonoluluArt-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
@@ -300,12 +371,19 @@
 		};
 		40086B041EC7F7AF00FD79F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A500667779C463C1AECBE0 /* Pods-HonoluluArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU5Z24RG7N;
 				INFOPLIST_FILE = HonoluluArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleAnalytics/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.HonoluluArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./HonoluluArt/Bridging-header/HonoluluArt-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};

@@ -11,6 +11,15 @@ class ViewController: UIViewController {
  let locationManager = CLLocationManager()
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    let name = "MapViewScreen"
+    let tracker = GAI.sharedInstance().defaultTracker
+    tracker?.set(kGAIScreenName, value: name)
+   // GAI.sharedInstance().trac
+    
+    let builder = GAIDictionaryBuilder.createScreenView()
+    tracker?.send(builder?.build()! as! [NSObject : AnyObject])
+    
     let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
     //let initialLocation = CLLocation(latitude: 21.290824, longitude: -157.85131)
     centerMapOnLocation(location:initialLocation)
@@ -73,6 +82,9 @@ extension ViewController:MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
+        
+        
+        
         let location = view.annotation as! Artwork
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
         location.mapItem().openInMaps(launchOptions: launchOptions)
